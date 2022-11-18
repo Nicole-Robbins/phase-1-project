@@ -2,33 +2,48 @@
     "to-dos": [
       {
         "id": 1,
-        "action": "Example Article",
-        "time": "This is an example."
+        "action": "Water Plants",
+        "time": 2
       },
       {
         "id": 2,
-        "action": "Second Article",
-        "time": "This is also an example."
+        "action": "Put dishes in dishwasher",
+        "time": 3
       },
       {
         "id": 3,
-        "action": "Example Article",
-        "time": "This is an example."
+        "action": "Clean out fridge",
+        "time": 4.5
       },
       {
         "id": 4,
-        "action": "Second Article",
-        "time": "This is also an example."
+        "action": "Put laundry in the wash",
+        "time": 7
       },
       {
         "id": 5,
-        "action": "Example Article",
-        "time": "This is an example."
+        "action": "Clean bathroom counters",
+        "time": 10
       },
       {
         "id": 6,
-        "action": "Second Article",
-        "time": "This is also an example."
+        "action": "Sweep",
+        "time": 15
+      },
+      {
+        "id": 7,
+        "action": "Pay bills",
+        "time": 20
+      },
+      {
+        "id": 8,
+        "action": "Folding laundry",
+        "time": 25
+      },
+      {
+        "id": 9,
+        "action": "Mow the yard",
+        "time": 30
       }
     ]
   }
