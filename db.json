@@ -3,47 +3,56 @@
       {
         "id": 1,
         "action": "Water Plants",
-        "time": 2
+        "time": 2,
+        "category": "quick-tick"
       },
       {
         "id": 2,
         "action": "Put dishes in dishwasher",
-        "time": 3
+        "time": 3,
+        "category": "quick-tick"
       },
       {
         "id": 3,
         "action": "Clean out fridge",
-        "time": 4.5
+        "time": 4.5,
+        "category": "quick-tick"
       },
       {
         "id": 4,
         "action": "Put laundry in the wash",
-        "time": 7
+        "time": 7,
+        "category": "task"
       },
       {
         "id": 5,
         "action": "Clean bathroom counters",
-        "time": 10
+        "time": 10,
+        "category": "task"
       },
       {
         "id": 6,
         "action": "Sweep",
-        "time": 15
+        "time": 15,
+        "category": "task"
       },
       {
         "id": 7,
         "action": "Pay bills",
-        "time": 20
+        "time": 20,
+        "category": "project"
       },
       {
         "id": 8,
         "action": "Folding laundry",
-        "time": 25
+        "time": 25,
+        "category": "project"
       },
       {
         "id": 9,
         "action": "Mow the yard",
-        "time": 30
+        "time": 30,
+        "category": "project"
       }
     ]
   }

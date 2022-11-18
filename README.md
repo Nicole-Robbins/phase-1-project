@@ -11,3 +11,6 @@ Managing tasks can be daunting, especially when it seems like it's an endless li
 ### What are the secret ingredients?
 
 The Task Help App is an HTML/CSS/JS frontend that interacts with a db.json file using a json-server.
+
+# how to use
+# contributions
