@@ -6,26 +6,32 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <header id="header">
+        <h1>welcome to the Task Helper App</h1>
+        <h2>break up with endless to-do lists</h2>
+    </header>
     <div class="container">
         <div id="todos">
             <h2>Task Helper</h2>
             <h3>Add your To-Do</h3>
             <form id='entertask' action="#" method="POST"></form>
-                <div class="field">
+                <div class="fieldset">
                     <ul>
                         <li>
-                          <label for="task">Task</label>
+                          <label for="task">Select Task:</label>
                           <input type='text' id='newtask' placeholder='Enter a task!' />
                         </li>
-                        <li>
-                          <label for="time">Time Estimate</label>
-                          <input type='number' id="timeest" placeholder='Enter the est. time!' />
-                        </li>
                         <li class="button">
-                            <button type="submit">Enter</button>
+                            <button type="submit">Add to your day</button>
                           </li>
                 </div>
         </div>
     </div>
+    <div class="fieldset" id='short'></div>
+        <h3>quick-ticks</h3>
+    <div class="fieldset" id='medium'></div>
+        <h3>tasks</h3>
+    <div class="fieldset" id='long'></div>
+        <h3>Projects</h3>
 </body>
 </html>
