@@ -1,25 +1,38 @@
-document.addEventListener('DOMContentLoaded', () => {
-//event listener #1: dom content loaded
-document.querySelector('form').addEventListener('submit', (e) =>{
-    e.preventDefault();
-    const newTask = document.querySelector("#lang");
-    taskFilter(newTask.value);
-})
+document.addEventListener('DOMContentLoaded', () => {//event listener #1: DOMContentLoaded
+
+const newTask = document.querySelector("#chores");
+let taskItem = document.createElement('li');
+
+
 const quickTicks = document.querySelector('#shorttasks');
 const mediumTasks = document.querySelector('#mediumtasks');
 const projects = document.querySelector('#longtasks');
 
-function taskFilter(nt){
-    let taskItem = document.createElement('li');
-    taskItem.innerText = nt;
-    quickTicks.appendChild(taskItem);
+document.querySelector('form').addEventListener('submit', (e) =>{//event listener #2: submit
+    e.preventDefault();
+
+    fetch('http://localhost:3000/to-dos')//using json server
+    .then((res) => res.json())
+    .then((data) => filterData(data)) 
+})
+
+function filterData(data){
+    data.find(function (oneTask){//iteration
+        if (oneTask.action === newTask.value){
+            if (oneTask.time < 5){
+                quickTicks.appendChild(taskItem);
+                taskItem.innerText = `${newTask.value}`;  
+            } else if (oneTask.time <= 15){
+                mediumTasks.appendChild(taskItem);
+                taskItem.innerText = `${newTask.value}`;
+            } else {
+                projects.appendChild(taskItem);
+                taskItem.innerText = `${newTask.value}`;
+            }
+        }
+    })
 }
     
-//event listener #2: choosing a task enter button 'submit'
-// will add a task to the appropriate category using if then and iteration to look at each category
-
 //event listener #3: delete a task 'click'
 // will remove a task from the field but not the dropdown list
 })
-
-//still need an iteration and a fetch json
