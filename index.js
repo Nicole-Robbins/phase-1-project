@@ -20,17 +20,17 @@ function filterData(data){
             if (oneTask.time < 5){
                 quickTicks.innerHTML += `
                 <li> ${newTask.value}, ${oneTask.time} minutes
-                    <button> X </button>
+                    <button data-action="delete"> X </button>
                 </li>`; 
             } else if (oneTask.time <= 15){
                 mediumTasks.innerHTML += `
                 <li> ${newTask.value}, ${oneTask.time} minutes
-                    <button> X </button>
+                    <button data-action="delete"> X </button>
                 </li>`;
             } else {
                 projects.innerHTML += `
                 <li> ${newTask.value}, ${oneTask.time} minutes
-                    <button> X </button>
+                    <button data-action="delete"> X </button>
                 </li>`;
             }
         }
@@ -38,6 +38,9 @@ function filterData(data){
 }
 
 categories.addEventListener('click', (e) => {//event listener #3: click
-    e.target.parentElement.remove()
+    if (e.target.dataset.action === 'delete'){
+        e.target.parentElement.remove();
+    }
+
 })
 })
