@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 //event listener #1: dom content loaded
-
+document.querySelector('form').addEventListener('submit', (e) =>{
+    e.preventDefault();
+    console.log(e.target);
+})
+    
 //event listener #2: choosing a task enter button 'submit'
 // will add a task to the appropriate category using if then and iteration to look at each category
 
