@@ -7,31 +7,33 @@ html {
   body {
     min-height: 100%;
     min-width: 100%;
-    background: linear-gradient(pink, violet);
+    background: linear-gradient(rgb(215, 237, 209), rgb(185, 229, 173));
   }
  
-  button {
+  .button {
     font-size: 14px;
   }
   
-  #main-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  #lang {
+    margin: 10px;
     border: 1px solid #333;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 15px 20px 18px 18px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 5px 5px 5px 5px;
     border-radius: 5px;
     box-shadow: 2px 5px 5px #333;
   }
   
-  #entertask {
-    margin: 10px;
-    border: 1px solid #333;
-    background: rgba(255, 255, 255, 0.75);
-    padding: 15px 20px 18px 18px;
-    border-radius: 5px;
-    box-shadow: 2px 5px 5px #333;
+  /* .fieldset {
+
   }
+  #short{
+
+  }
+  #medium{
+
+  }
+  #long{
+
+  } */
+  
+ 
