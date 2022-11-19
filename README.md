@@ -18,4 +18,13 @@ To use the Task Helper App, select a task from the dropdown list to add to your 
 
 #### Contributions
 
-To create this app, I referenced 
+For this project, I referenced these articles and videos:
+https://www.makeareadme.com/
+https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+https://www.freecodecamp.org/news/html-select-tag-how-to-make-a-dropdown-menu-or-combo-list/
+https://www.w3schools.com/howto/howto_js_todolist.asp
+Evans Wang's lecture "js task lister lite 051319" https://youtu.be/0USCqgDzVHA
+Flatiron's Task Lister Lite (specifically for css inspiration) https://learn-co-curriculum.github.io/js-task-lister-lite/
+
