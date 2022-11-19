@@ -10,6 +10,11 @@ html {
     background: linear-gradient(rgb(215, 237, 209), rgb(185, 229, 173));
   }
  
+  #header {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+  }
+
   .button {
     font-size: 14px;
   }
@@ -22,11 +27,9 @@ html {
     border-radius: 5px;
     box-shadow: 2px 5px 5px #333;
   }
-  
-  /* .fieldset {
 
-  }
-  #short{
+
+  /* #short{
 
   }
   #medium{
