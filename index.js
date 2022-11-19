@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {//event listener #1: DOMContentLoaded
 
 const newTask = document.querySelector("#chores");
-let taskItem = document.createElement('li');
-
-
+const categories = document.querySelector('#categories');
 const quickTicks = document.querySelector('#shorttasks');
 const mediumTasks = document.querySelector('#mediumtasks');
 const projects = document.querySelector('#longtasks');
@@ -21,20 +19,25 @@ function filterData(data){
         if (oneTask.action === newTask.value){
             if (oneTask.time < 5){
                 quickTicks.innerHTML += `
-                <li> ${newTask.value}
+                <li> ${newTask.value}, ${oneTask.time} minutes
                     <button> X </button>
                 </li>`; 
             } else if (oneTask.time <= 15){
-                mediumTasks.appendChild(taskItem);
-                taskItem.innerText = `${newTask.value}`;
+                mediumTasks.innerHTML += `
+                <li> ${newTask.value}, ${oneTask.time} minutes
+                    <button> X </button>
+                </li>`;
             } else {
-                projects.appendChild(taskItem);
-                taskItem.innerText = `${newTask.value}`;
+                projects.innerHTML += `
+                <li> ${newTask.value}, ${oneTask.time} minutes
+                    <button> X </button>
+                </li>`;
             }
         }
     })
 }
-    
-//event listener #3: delete a task 'click'
-// will remove a task from the field but not the dropdown list
+
+categories.addEventListener('click', (e) => {//event listener #3: click
+    e.target.parentElement.remove()
+})
 })
