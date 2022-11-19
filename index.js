@@ -17,11 +17,13 @@ document.querySelector('form').addEventListener('submit', (e) =>{//event listene
 })
 
 function filterData(data){
-    data.find(function (oneTask){//iteration
+    data.find(function (oneTask){//iteration using find
         if (oneTask.action === newTask.value){
             if (oneTask.time < 5){
-                quickTicks.appendChild(taskItem);
-                taskItem.innerText = `${newTask.value}`;  
+                quickTicks.innerHTML += `
+                <li> ${newTask.value}
+                    <button> X </button>
+                </li>`; 
             } else if (oneTask.time <= 15){
                 mediumTasks.appendChild(taskItem);
                 taskItem.innerText = `${newTask.value}`;
