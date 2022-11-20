@@ -17,7 +17,7 @@ document.querySelector('form').addEventListener('submit', (e) =>{//event listene
 function filterData(data){
     data.find(function (oneTask){//iteration using find
         if (oneTask.action === newTask.value){
-            if (oneTask.time < 5){
+            if (oneTask.time <= 5){
                 quickTicks.innerHTML += `
                 <li> ${newTask.value}, ${oneTask.time} minutes
                     <button data-action="delete"> X </button>
@@ -31,7 +31,7 @@ function filterData(data){
                 projects.innerHTML += `
                 <li> ${newTask.value}, ${oneTask.time} minutes
                     <button data-action="delete"> X </button>
-                </li>`;
+                </li>`;//sourced this code from Evans Wang's lecture
             }
         }
     })
