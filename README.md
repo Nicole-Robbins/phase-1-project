@@ -14,7 +14,9 @@ The Task Help App is an HTML/CSS/JS frontend that interacts with a db.json file 
 
 ### How to use the app
 
-To use the Task Helper App, select a task from the dropdown list to add to your daily task categories. Use the categories to make sure you're fitting each task into your schedule as realistically and optimally as possible. If you only have 5 minutes right now, knock-out a "quick-tick" and save the Projects for when you have more free time.
+To use the Task Helper App, select a task from the dropdown list to add to your daily task categories. The task will appear in either the category "quick-ticks" which take 5 minutes or less, "tasks" which take between 5-15 minutes, or "Projects" which take 15 minutes or more. To delete a task, simply click the "x" button.
+
+ Use the categories to make sure you're fitting each task into your schedule as realistically and optimally as possible. If you only have 5 minutes right now, knock-out a "quick-tick" and save the Projects for when you have more free time.
 
 #### Contributions
 
